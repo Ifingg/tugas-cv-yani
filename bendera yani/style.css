@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Warna latar belakang */
+}
+
+.bendera-monako {
+    width: 300px; /* Lebar bendera */
+    height: 200px; /* Tinggi bendera */
+   
+}
+
+.bendera-monako::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%; /* Setengah dari tinggi bendera */
+    background-color: #ff0000; /* Warna merah */
+}
+
+.bendera-monako::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%; /* Setengah dari tinggi bendera */
+    background-color: #ffffff; /* Warna putih */
+}
